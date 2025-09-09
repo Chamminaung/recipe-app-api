@@ -15,7 +15,7 @@ if (ENV.NODE_ENV === 'production') {
 
 app.use(express.json());
 
-app.get('/api/haha', (req, res) => {
+app.get('/api/health', (req, res) => {
   res.status(200).json({ message: 'Haha endpoint is working!' });
 });
 
